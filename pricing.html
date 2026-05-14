@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <span class="nav-logo"><a href="index.html">Lando</a></span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- <div class="nav-right">
+      <button class="btn-login">Log in</button>
+      <button class="btn-signup">Sign up</button>
+    </div> -->
+  </nav>
+
+  <!-- ===================== PRICING PAGE ===================== -->
+  <div id="page-pricing" class="page active">
+
+    <div class="pricing-hero">
+      <h1 class="title">Pricing</h1>
+      <p>Our pricing is not expensive, but it's not cheap either, it's exactly what it should be</p>
+    </div>
+
+    <div class="pricing-cards">
+      <!-- Basic -->
+      <div class="price-card">
+        <div class="price-plan">Basic</div>
+        <div class="price-amount">
+          <span class="price-dollar"><sup>$</sup></span>
+          <span class="price-num">9</span>
+          <span class="price-mo">/month</span>
+        </div>
+        <div class="price-desc">For individuals and small teams</div>
+        <button class="btn-plan btn-plan-outline">Get Started with Basic</button>
+      </div>
+      <!-- Pro -->
+      <div class="price-card popular">
+        <div class="popular-badge">Most Popular</div>
+        <div class="price-plan">Pro</div>
+        <div class="price-amount">
+          <span class="price-dollar"><sup>$</sup></span>
+          <span class="price-num">19</span>
+          <span class="price-mo">/month</span>
+        </div>
+        <div class="price-desc">For startups and growing businesses</div>
+        <button class="btn-plan btn-plan-filled">Get Started with Pro</button>
+      </div>
+      <!-- Business -->
+      <div class="price-card">
+        <div class="price-plan">Business</div>
+        <div class="price-amount">
+          <span class="price-dollar"><sup>$</sup></span>
+          <span class="price-num">99</span>
+          <span class="price-mo">/month</span>
+        </div>
+        <div class="price-desc">For organizations with advanced needs</div>
+        <button class="btn-plan btn-plan-outline">Get Started with Business</button>
+      </div>
+    </div>
+
+    <!-- Compare Features -->
+    <div class="compare-section">
+      <h2 class="title">Compare Features</h2>
+      <div class="compare-grid">
+        <!-- Headings row -->
+        <div class="compare-col">
+          <h3>Basic</h3>
+        </div>
+        <div class="compare-col">
+          <h3>Pro</h3>
+        </div>
+        <div class="compare-col">
+          <h3>Business</h3>
+        </div>
+
+        <!-- Divider spanning all 3 columns -->
+        <div class="compare-divider-row"></div>
+
+        <!-- BASIC features -->
+        <div class="compare-col">
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span> Process Analysis</li>
+            <li><span class="check-icon">✓</span> Task Management</li>
+            <li><span class="check-icon">✓</span> Time Tracking</li>
+            <li><span class="check-icon">✓</span> Performance Metrics</li>
+            <li><span class="check-icon">✓</span> Customizable Reports</li>
+            <li><span class="check-icon">✓</span> Email Integration</li>
+          </ul>
+        </div>
+        <!-- PRO features -->
+        <div class="compare-col">
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span> Process Analysis</li>
+            <li><span class="check-icon">✓</span> Task Management</li>
+            <li><span class="check-icon">✓</span> Time Tracking</li>
+            <li><span class="check-icon">✓</span> Performance Metrics</li>
+            <li><span class="check-icon">✓</span> Customizable Reports</li>
+            <li><span class="check-icon">✓</span> Email Integration</li>
+            <li><span class="check-icon">✓</span> Real-time Collaboration</li>
+            <li><span class="check-icon">✓</span> Automated Workflows</li>
+          </ul>
+        </div>
+        <!-- BUSINESS features -->
+        <div class="compare-col">
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span> Process Analysis</li>
+            <li><span class="check-icon">✓</span> Task Management</li>
+            <li><span class="check-icon">✓</span> Time Tracking</li>
+            <li><span class="check-icon">✓</span> Performance Metrics</li>
+            <li><span class="check-icon">✓</span> Customizable Reports</li>
+            <li><span class="check-icon">✓</span> Email Integration</li>
+            <li><span class="check-icon">✓</span> Real-time Collaboration</li>
+            <li><span class="check-icon">✓</span> Automated Workflows</li>
+            <li><span class="check-icon">✓</span> Analytics Dashboard</li>
+            <li><span class="check-icon">✓</span> SLA Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <img src="assets/images/faq.png" alt="FAQ" class="placeholder-img" />
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">How does this work? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">Lando works by connecting your existing workflows and processes into a unified platform
+          that you can manage from one dashboard.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">What are the benefits? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">You get improved team collaboration, automated task management, real-time analytics, and
+          significant cost savings.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Is it difficult to use? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">Not at all! Lando is designed with simplicity in mind. Most users get up and running
+          within minutes of signing up.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Can I have custom pricing? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">Yes! For large organizations with specific needs, please contact our sales team to
+          discuss custom enterprise pricing.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Is there trial version available? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">Yes, we offer a free 30-day trial with full access to all Pro features. No credit card
+          required.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Where do I sign up? <span class="faq-chevron"><i
+              class="fa fa-chevron-down"></i></span></div>
+        <div class="faq-answer">Click the "Sign up" button in the top right corner to create your account in less than 2
+          minutes.</div>
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner" style="max-width:1100px;margin:0 auto 80px;">
+      <div>
+        <h2 class="title">Get started with<br>Lando today</h2>
+        <p>Start optimizing your processes today.</p>
+        <button class="btn-primary">Sign up now</button>
+      </div>
+      <img src="assets/images/landing-3.png" alt="CTA" class="placeholder-img" />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">Lando</div>
+          <p>2021 © Lando<br>All rights reserved.</p>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
