@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lando</title>
+  <title>RecoTech Analytics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,13 +14,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <nav>
-    <span class="nav-logo"><a href="index.html">Lando</a></span>
+    <span class="nav-logo"><a href="index.html">RecoTech Analytics</a></span>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="pricing.html" class="active">Pricing</a></li>
@@ -47,38 +49,85 @@
     </div>
 
     <div class="pricing-cards">
-      <!-- Basic -->
+      <!-- Starter -->
       <div class="price-card">
-        <div class="price-plan">Basic</div>
-        <div class="price-amount">
+        <div class="price-plan">Starter</div>
+        <div class="plan-name">Satellite Report</div>
+        <!-- <div class="price-amount">
           <span class="price-dollar"><sup>$</sup></span>
           <span class="price-num">9</span>
           <span class="price-mo">/month</span>
+        </div> -->
+        <div class="price-desc">
+          <ul>
+            <li>Satellite image survey of your land.</li>
+            <li>Simple written report with maps.</li>
+            <li>No on-site visit needed.</li>
+          </ul>
         </div>
-        <div class="price-desc">For individuals and small teams</div>
+        <button class="btn-plan btn-plan-outline">Get Started with Starter</button>
+      </div>
+
+      <!-- Basic -->
+      <div class="price-card">
+        <div class="price-plan">Basic</div>
+        <div class="plan-name">One Survey</div>
+        <!-- <div class="price-amount">
+          <span class="price-dollar"><sup>$</sup></span>
+          <span class="price-num">9</span>
+          <span class="price-mo">/month</span>
+        </div> -->
+        <div class="price-desc">
+          <ul>
+            <li>Full land and soil survey.</li>
+            <li>Simple report with pictures.</li>
+            <li>One phone consultation</li>
+          </ul>
+        </div>
         <button class="btn-plan btn-plan-outline">Get Started with Basic</button>
       </div>
+
       <!-- Pro -->
       <div class="price-card popular">
-        <div class="popular-badge">Most Popular</div>
-        <div class="price-plan">Pro</div>
-        <div class="price-amount">
+        <!-- <div class="popular-badge">Most Popular</div> -->
+        <div class="price-plan popular-heading-badge">
+          <i class="fa-solid fa-star" style="color: gold;"></i>
+          Most Popular
+        </div>
+        <div class="plan-name">Full Season</div>
+        <!-- <div class="price-amount">
           <span class="price-dollar"><sup>$</sup></span>
           <span class="price-num">19</span>
           <span class="price-mo">/month</span>
+        </div> -->
+        <div class="price-desc">
+          <ul>
+            <li>Everything in Basic.</li>
+            <li>Harvest forecast model.</li>
+            <li>Monitoring all season long.</li>
+            <li>Monthly farm updates.</li>
+          </ul>
         </div>
-        <div class="price-desc">For startups and growing businesses</div>
         <button class="btn-plan btn-plan-filled">Get Started with Pro</button>
       </div>
+
       <!-- Business -->
       <div class="price-card">
         <div class="price-plan">Business</div>
-        <div class="price-amount">
+        <div class="plan-name">Satellite Report</div>
+        <!-- <div class="price-amount">
           <span class="price-dollar"><sup>$</sup></span>
           <span class="price-num">99</span>
           <span class="price-mo">/month</span>
+        </div> -->
+        <div class="price-desc">
+          <ul>
+            <li>Everything in Full Season.</li>
+            <li>Dedicated farm advisor.</li>
+            <li>On-site visits as needed.</li>
+            <li>Risk and insurance reports.</li>
+          </ul>
         </div>
-        <div class="price-desc">For organizations with advanced needs</div>
         <button class="btn-plan btn-plan-outline">Get Started with Business</button>
       </div>
     </div>
@@ -179,21 +228,21 @@
     </div>
 
     <!-- CTA Banner -->
-    <div class="cta-banner" style="max-width:1100px;margin:0 auto 80px;">
+    <div class="cta-banner" style="max-width:1100px;margin:0px auto 80px;">
       <div>
-        <h2 class="title">Get started with<br>Lando today</h2>
-        <p>Start optimizing your processes today.</p>
-        <button class="btn-primary">Sign up now</button>
+        <h2 class="title">We Visit Across India</h2>
+        <p>Kerala · Karnataka · Tamil Nadu <br>and across all states.</p>
+        <a href="tel:+919876543210" class="btn-primary">Sign up now</a>
       </div>
-      <img src="assets/images/landing-3.png" alt="CTA" class="placeholder-img" />
+      <img src="assets/images/smart-farmer.jpg" alt="CTA" class="placeholder-img" />
     </div>
 
     <!-- Footer -->
     <footer>
       <div class="footer-inner">
         <div class="footer-brand">
-          <div class="logo">Lando</div>
-          <p>2021 © Lando<br>All rights reserved.</p>
+          <div class="logo">RecoTech Analytics</div>
+          <p>2021 © RecoTech Analytics<br>All rights reserved.</p>
         </div>
         <div class="footer-col">
           <ul>
@@ -203,7 +252,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <!-- <div class="footer-col">
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
@@ -216,12 +265,15 @@
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms Of Service</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </footer>
   </div>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

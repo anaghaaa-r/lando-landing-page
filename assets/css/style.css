@@ -6,6 +6,21 @@
     padding: 0;
 }
 
+/* :root {
+    --bg: #e8e8e8;
+    --bg-light: #ededed;
+    --white: #ffffff;
+    --black: #07120B;
+    --gray: #797F7A;
+    --gray-light: #808080;
+    --green: #2F7344;
+    --green-hover: #225332;
+    --dark-green: #265333;
+    --light-green: #EDF8F0;
+    --radius: 12px;
+    --font: 'Poppins', sans-serif;
+} */
+
 :root {
     --bg: #e8e8e8;
     --bg-light: #ededed;
@@ -13,8 +28,10 @@
     --black: #111111;
     --gray: #555555;
     --gray-light: #888888;
-    --blue: #3366FF;
+    --blue: #0040FF;
     --blue-hover: #2255ee;
+    --light-blue: #E6ECFF;
+    --dark-blue: #001D75;
     --radius: 12px;
     --font: 'Poppins', sans-serif;
 }
@@ -199,6 +216,7 @@ section {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.2s;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -308,6 +326,11 @@ section {
     margin: 0 48px 32px;
     background-color: #ededed;
     box-shadow: none;
+}
+
+.other-card img {
+    width: 570px;
+    height: 437px;
 }
 
 .other-card-content {
@@ -539,9 +562,9 @@ section {
 }
 
 .cta-banner p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
-    color: var(--gray);
+    color: var(--black);
     margin-bottom: 28px;
     line-height: 26px;
 }
@@ -725,10 +748,11 @@ section {
     border-radius: 16px;
     box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 32px;
     border: 0px;
+    padding-left: 40px;
 }
 
 .price-card.popular {
-    transform: scale(1.22);
+    /* transform: scale(1.22); */
     z-index: 1;
     box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 32px;
 }
@@ -747,6 +771,25 @@ section {
     padding: 4px 14px;
     border-radius: 24px;
     text-align: center;
+    white-space: nowrap;
+}
+
+.popular-heading-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 24px;
+    width: fit-content;
+}
+
+.plan-name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .price-plan {
@@ -755,9 +798,9 @@ section {
     margin-bottom: 8px;
 }
 
-.price-card.popular .price-plan {
+/* .price-card.popular .price-plan {
     margin-top: 20px;
-}
+} */
 
 .price-amount {
     display: flex;
@@ -785,9 +828,9 @@ section {
 .price-desc {
     font-size: 13px;
     color: #030303ff;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     text-align: left;
-    line-height: 26px;
+    /* line-height: 26px; */
     white-space: pre-line;
     word-break: break-word;
 }
@@ -962,7 +1005,7 @@ section {
 .contact-section {
     display: flex;
     align-items: center;
-    gap: 64px;
+    /* gap: 64px; */
     max-width: 1100px;
     margin: 0 auto;
     padding: 80px 10px;
@@ -1143,6 +1186,114 @@ html {
 
 .menu-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.services {
+    padding: 80px 48px;
+}
+
+.services h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services .sub {
+    font-size: 16px;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: #FFFFFF;
+    border: 2px solid #D8E5DA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+    padding: 32px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    width: 344px;
+    height: 270px;
+    opacity: 1;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+}
+
+.service-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--light-blue);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.service-icon i {
+    /* width: 28px;
+    height: 28px; */
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+.service-name {
+    font-size: 1.2rem;
+    color: #14240A;
+    line-height: 1.2;
+}
+
+.service-desc {
+    font-size: 0.9rem;
+    color: #3A4A30;
+    line-height: 1.65;
+}
+
+.cta-banner .p {
+    font-size: 20px;
+    color: var(--black);
+}
+
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--dark-blue);
+    /* border-radius: 18px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    /* width: 28px;
+    height: 28px; */
+    font-size: 25px;
+    color: var(--light-blue);
+}
+
+.contact-item:hover {
+    background-color: var(--light-blue);
+    cursor: pointer;
 }
 
 /* =========================================
