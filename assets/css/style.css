@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-/* :root {
+:root {
     --bg: #e8e8e8;
     --bg-light: #ededed;
     --white: #ffffff;
@@ -19,9 +19,9 @@
     --light-green: #EDF8F0;
     --radius: 12px;
     --font: 'Poppins', sans-serif;
-} */
+}
 
-:root {
+/* :root {
     --bg: #e8e8e8;
     --bg-light: #ededed;
     --white: #ffffff;
@@ -34,7 +34,7 @@
     --dark-blue: #001D75;
     --radius: 12px;
     --font: 'Poppins', sans-serif;
-}
+} */
 
 body {
     font-family: var(--font);
@@ -94,7 +94,7 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--blue);
+    color: var(--green);
 }
 
 .nav-right {
@@ -118,7 +118,7 @@ nav {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-    background: var(--blue);
+    background: var(--green);
     border: none;
     padding: 10px 22px;
     border-radius: 8px;
@@ -127,7 +127,7 @@ nav {
 }
 
 .btn-signup:hover {
-    background: var(--blue-hover);
+    background: var(--green-hover);
 }
 
 /* ===== SHARED ===== */
@@ -210,7 +210,7 @@ section {
     font-size: 14px;
     font-weight: 700;
     color: #fff;
-    background: var(--blue);
+    background: var(--green);
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -220,7 +220,7 @@ section {
 }
 
 .btn-primary:hover {
-    background: var(--blue-hover);
+    background: var(--green-hover);
 }
 
 .btn-secondary {
@@ -234,11 +234,12 @@ section {
     border-radius: 8px;
     cursor: pointer;
     transition: border-color 0.2s;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
-    border-color: var(--blue);
-    color: var(--blue);
+    border-color: var(--green);
+    color: var(--green);
 }
 
 .hero-image img {
@@ -324,7 +325,7 @@ section {
     height: 478px;
     gap: 48px;
     margin: 0 48px 32px;
-    background-color: #ededed;
+    background-color: #F6FEF5;
     box-shadow: none;
 }
 
@@ -668,7 +669,7 @@ section {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     max-width: 900px;
     margin: 0 auto;
@@ -751,6 +752,10 @@ section {
     padding-left: 40px;
 }
 
+.price-card:hover {
+    transform: translateY(-10px);
+}
+
 .price-card.popular {
     /* transform: scale(1.22); */
     z-index: 1;
@@ -764,7 +769,7 @@ section {
     transform: translateX(-50%);
     width: 100px;
     height: 22px;
-    background: var(--blue);
+    background: var(--green);
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -778,7 +783,7 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: var(--blue);
+    background: var(--green);
     color: #fff;
     font-weight: 700;
     padding: 5px 12px;
@@ -853,18 +858,18 @@ section {
 }
 
 .btn-plan-outline:hover {
-    border-color: var(--blue);
-    color: var(--blue);
+    border-color: var(--green);
+    color: var(--green);
 }
 
 .btn-plan-filled {
-    background: var(--blue);
+    background: var(--green);
     border: none;
     color: #fff;
 }
 
 .btn-plan-filled:hover {
-    background: var(--blue-hover);
+    background: var(--green-hover);
 }
 
 .compare-section {
@@ -918,7 +923,7 @@ section {
 .check-icon {
     width: 20px;
     height: 20px;
-    background: var(--blue);
+    background: var(--green);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -931,7 +936,7 @@ section {
 .check-icon {
     width: 20px;
     height: 20px;
-    background: var(--blue);
+    background: var(--green);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1057,7 +1062,7 @@ section {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--blue);
+    border-color: var(--green);
 }
 
 .form-group input::placeholder,
@@ -1069,7 +1074,7 @@ section {
     font-family: var(--font);
     width: 100%;
     padding: 14px;
-    background: var(--blue);
+    background: var(--green);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -1081,7 +1086,7 @@ section {
 }
 
 .btn-send:hover {
-    background: var(--blue-hover);
+    background: var(--green-hover);
 }
 
 /* ===== FOOTER ===== */
@@ -1132,7 +1137,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-    color: var(--blue);
+    color: var(--green);
 }
 
 /* =========================================
@@ -1233,14 +1238,14 @@ html {
 }
 
 .service-card:hover {
-    border-color: var(--blue);
+    border-color: var(--green);
     transform: translateY(-4px);
 }
 
 .service-icon {
     width: 60px;
     height: 60px;
-    background: var(--light-blue);
+    background: var(--light-green);
     border-radius: 18px;
     display: flex;
     align-items: center;
@@ -1252,7 +1257,7 @@ html {
     /* width: 28px;
     height: 28px; */
     font-size: 18px;
-    color: var(--dark-blue);
+    color: var(--dark-green);
 }
 
 .service-name {
@@ -1276,7 +1281,7 @@ html {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: var(--dark-blue);
+    background: var(--green);
     /* border-radius: 18px; */
     display: flex;
     align-items: center;
@@ -1284,15 +1289,24 @@ html {
     flex-shrink: 0;
 }
 
+.contact-image img {
+    /* width: 100%;
+        max-width: 420px;
+        height: auto; */
+    /* margin: 0 auto; */
+    width: 549px;
+    height: 100%;
+}
+
 .contact-icon i {
     /* width: 28px;
     height: 28px; */
     font-size: 25px;
-    color: var(--light-blue);
+    color: var(--light-green);
 }
 
 .contact-item:hover {
-    background-color: var(--light-blue);
+    background-color: var(--light-green);
     cursor: pointer;
 }
 
@@ -1427,6 +1441,8 @@ html {
         max-width: 420px;
         height: auto;
         margin: 0 auto;
+        width: 549px;
+        height: 454px;
     }
 
     .contact-form-area {
